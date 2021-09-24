@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=chrome">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+    integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm"
+    crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body class="loginAction">
+    <form id="loginForm">
+        <input required maxlength="15"
+        placeholder="Hello, Let me know your name"
+        type="text" id="loginInput">
+        <button class="hidden">Login</button>
+    </form>
+        <div id="Time">
+            <h1 class="clock" class="hidden"></h1>
+        </div>
+        <div id='greet'>
+            <h3 id="greeting" class="hidden"></h3>
+        </div>
+
+    <form id="todoBox">
+        <input class="todoInput" type="text" placeholder="write the list">
+        <button class="todoButton" type="submit">
+            <i class="fas fa-plus-square"></i>
+        </button>
+        <div class="select">
+            <select name="todos" class="filterTodo">
+                <option value="all">All</option>
+                <option value="completed">completed</option>
+                <option value="uncompleted">uncompleted</option>
+            </select>
+        </div>
+    </form>
+
+    <div id="todoContainer">
+        <ul class="todolist"></ul>
+    </div>
+
+    <script src="quotes.js"></script>
+    <script src="bgImg.js"></script>
+    <script src="clock.js"></script>
+    <script src="loginForm.js"></script>
+    <script src="todo.js"></script>
+</body>
+
+</html>

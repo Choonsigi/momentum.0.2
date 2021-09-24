@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::placeholder {
+    color: white;
+}
+
+.hidden {
+    display: none;
+}
+
+body {
+    color: white;
+}
+
+#loginForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40vh;
+}
+
+#loginForm input {
+    padding: 0.6rem;
+    font-size: 1.5rem;
+    border: none;
+    width: 100%;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+#Time {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: fade-in;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+}
+
+#greet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-name: fade-in;
+    animation-iteration-count: 1;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade-in{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#todoBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#todoBox input, #todoBox button {
+    padding: 0.15rem;
+    border: none;
+    background-color: white;
+}
+
+#todoBox button {
+    color: #d88771;
+    background: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+#todoBox button:hover {
+    background:#d88771;
+    color:white;
+}
+
+#todoContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todolist {
+    min-width: 50%;
+    list-style: none;
+}
+
+.toDo {
+    margin: 0.3rem;
+    background: white;
+    color:black;
+    font-size: 0.9rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+}
+
+.toDo li {
+    flex: 1;
+}
+
+.deleteBtn {
+    background: #FF6f47;
+    color: white;
+    border: none;
+    padding: 0.3rem;
+}
+
+.completeBtn {
+    background: #3ed48e;
+    color: white;
+    border: none;
+    padding: 0.3rem;
+}
+
+.todoItem {
+    padding: 0.1rem ;
+}
+
+.fa-check {
+    pointer-events: none;
+}
+
+.fa-trash{
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration-line: line-through;
+    opacity: 0.5;
+}
+
+.fall {
+    transform: translateY(8rem) rotateZ(20deg);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    padding: 0.1rem;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+
+select {
+    color: #FF6f47;
+    width: 6.3rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background: #FF6f47;
+    top: 0.23rem;
+    right: 0;
+    line-height: 1.2rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select:hover::after {
+    background: white;
+    color: #FF6f47;
+}
